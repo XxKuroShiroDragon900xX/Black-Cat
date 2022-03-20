@@ -1,80 +1,269 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Birthday Card</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="content">
+         <h2 class="text" data-text="Happy Birthday Daddy"><a href=""></a>
+            Happy Birthday Daddy
+         </h2>
+      </div>
+      <style>
+  @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Kosugi+Maru&family=Montserrat:wght@100;200;300&family=Neonderthaw&family=Poppins:wght@100;200&family=Raleway+Dots&family=Varela+Round&display=swap');
+*{
   margin: 0;
-  font-family: Arial;
-  font-size: 17px;
+  padding: 0;
+  font-family: 'Courier New'
 }
-
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 30px; 
-  min-height: 30px;
-  display: inline;
-  display: auto;
-}
-
-.content {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+body, html {
   width: 100%;
-  padding: 20px;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
 }
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .text{
+  position: relative;
   color: #fff;
-  cursor: pointer;
+  font-weight: 700;
+  font-size: 45px;
+  transform: scale(2);
+  padding: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+.content .text:before,
+.content .text:after {
+  padding: 30px;
+  color: white;
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  top: 0;
 }
-</style>
-</head>
-<body>
-
-<video autoplay muted loop id="myVideo">
-  <source src="music.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <h1>Heading</h1>
-  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
+.content .text::before{
+  left: 3px;
+  text-shadow: -2px 0 #fb00fb;
+  animation: glitch-1 2s linear infinite reverse;
+}
+.content .text:after{
+  right: 6px;
+  text-shadow: -2px 0 #f9fb00;
+  animation: glitch-11 2s linear infinite reverse;
+}
+.content .text:after{
+  left: -3px;
+  text-shadow: -2px 0 #02feff;
+  animation: glitch-2 2s linear infinite reverse;
+}
+@keyframes glitch-1 {
+  0% {
+    clip: rect(130px, auto, 100px, 30px);
+  }
+  5% {
+    clip: rect(25px, auto, 95px, 30px);
+  }
+  10% {
+    clip: rect(40px, auto, 65px, 30px);
+  }
+  15% {
+    clip: rect(85px, auto, 80px, 30px);
+  }
+  20% {
+    clip: rect(135px, auto, 60px, 30px);
+  }
+  25% {
+    clip: rect(35px, auto, 15px, 30px);
+  }
+  30% {
+    clip: rect(130px, auto, 75px, 30px);
+  }
+  35% {
+    clip: rect(75px, auto, 105px, 30px);
+  }
+  40% {
+    clip: rect(60px, auto, 130px, 30px);
+  }
+  45% {
+    clip: rect(30px, auto, 85px, 30px);
+  }
+  50% {
+    clip: rect(20px, auto, 65px, 30px);
+  }
+  55% {
+    clip: rect(65px, auto, 60px, 30px);
+  }
+  60% {
+    clip: rect(10px, auto, 105px, 30px);
+  }
+  65% {
+    clip: rect(75px, auto, 115px, 30px);
+  }
+  70% {
+    clip: rect(105px, auto, 15px, 30px);
+  }
+  75% {
+    clip: rect(15px, auto, 75px, 30px);
+  }
+  80% {
+    clip: rect(65px, auto, 40px, 30px);
+  }
+  85% {
+    clip: rect(130px, auto, 70px, 30px);
+  }
+  90% {
+    clip: rect(35px, auto, 130px, 30px);
+  }
+  95% {
+    clip: rect(90px, auto, 100px, 30px);
+  }
+  100% {
+    clip: rect(15px, auto, 100px, 30px);
   }
 }
-</script>
-
-</body>
+@keyframes glitch-11 {
+  0% {
+    clip: rect(100px, auto, 60px, 30px);
+  }
+  5% {
+    clip: rect(200px, auto, 30px, 30px);
+  }
+  10% {
+    clip: rect(90px, auto, 305px, 30px);
+  }
+  15% {
+    clip: rect(39px, auto, 80px, 30px);
+  }
+  20% {
+    clip: rect(49px, auto, 60px, 30px);
+  }
+  25% {
+    clip: rect(400px, auto, 15px, 30px);
+  }
+  30% {
+    clip: rect(130px, auto, 75px, 30px);
+  }
+  35% {
+    clip: rect(75px, auto, 105px, 30px);
+  }
+  40% {
+    clip: rect(60px, auto, 130px, 30px);
+  }
+  45% {
+    clip: rect(30px, auto, 85px, 30px);
+  }
+  50% {
+    clip: rect(20px, auto, 65px, 30px);
+  }
+  55% {
+    clip: rect(65px, auto, 60px, 30px);
+  }
+  60% {
+    clip: rect(10px, auto, 105px, 30px);
+  }
+  65% {
+    clip: rect(75px, auto, 115px, 30px);
+  }
+  70% {
+    clip: rect(105px, auto, 15px, 30px);
+  }
+  75% {
+    clip: rect(15px, auto, 75px, 30px);
+  }
+  80% {
+    clip: rect(65px, auto, 40px, 30px);
+  }
+  85% {
+    clip: rect(130px, auto, 70px, 30px);
+  }
+  90% {
+    clip: rect(35px, auto, 130px, 30px);
+  }
+  95% {
+    clip: rect(90px, auto, 100px, 30px);
+  }
+  100% {
+    clip: rect(15px, auto, 100px, 30px);
+  }
+}
+@keyframes glitch-2 {
+  0% {
+    clip: rect(129px, auto, 36px, 30px);
+  }
+  5% {
+    clip: rect(36px, auto, 4px, 30px);
+  }
+  10% {
+    clip: rect(85px, auto, 66px, 30px);
+  }
+  15% {
+    clip: rect(91px, auto, 91px, 30px);
+  }
+  20% {
+    clip: rect(148px, auto, 138px, 30px);
+  }
+  25% {
+    clip: rect(38px, auto, 122px, 30px);
+  }
+  30% {
+    clip: rect(69px, auto, 54px, 30px);
+  }
+  35% {
+    clip: rect(98px, auto, 71px, 30px);
+  }
+  40% {
+    clip: rect(146px, auto, 34px, 30px);
+  }
+  45% {
+    clip: rect(134px, auto, 43px, 30px);
+  }
+  50% {
+    clip: rect(102px, auto, 80px, 30px);
+  }
+  55% {
+    clip: rect(119px, auto, 44px, 30px);
+  }
+  60% {
+    clip: rect(106px, auto, 99px, 30px);
+  }
+  65% {
+    clip: rect(141px, auto, 74px, 30px);
+  }
+  70% {
+    clip: rect(20px, auto, 78px, 30px);
+  }
+  75% {
+    clip: rect(133px, auto, 79px, 30px);
+  }
+  80% {
+    clip: rect(78px, auto, 52px, 30px);
+  }
+  85% {
+    clip: rect(35px, auto, 39px, 30px);
+  }
+  90% {
+    clip: rect(67px, auto, 70px, 30px);
+  }
+  95% {
+    clip: rect(71px, auto, 103px, 30px);
+  }
+  100% {
+    clip: rect(83px, auto, 40px, 30px);
+  }
+}
+      </style>
+   </body>
 </html>

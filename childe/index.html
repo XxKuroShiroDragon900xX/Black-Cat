@@ -9,29 +9,48 @@
 <body>
     <style>
     *{
-        color: #ddbbff;
+        text-decoration: none;
     }
 body{
-    background-image: url(img/aesthetic.gif);
+    background-image: url(img/purpleocean.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color:#ddbbff;
     size: cover;
     width: 70%;
     height: 70px;
     font-size: 24px;
     background: rgba( 255, 255, 255, 0.3 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 2px 2px 48px rgba(0, 0, 255, 0.4);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     position: initial;
     align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+button>a:active{
+    color: black;
+}
+button:hover{
+    color:black;
+    background:rgba( 221, 187, 255, 0.5 ); ;
+    font-size: 26px;
+}
+button:active{
+    transform : translateY(5px);
+    box-shadow: 1px 1px 24px rgba( 0, 0, 225, 0.4 );
+    color:black;
 }
     </style>
-    <button>
+    <button id="king">
         <a href="a.html">
             Enter here
         </a>
