@@ -13,7 +13,8 @@
         text-decoration: none;
     }
 body{
-    background-image: url(img/purpleocean.gif);
+   /* background-image: url(img/purpleocean.gif);*/
+   background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -56,21 +57,121 @@ button:active{
   width: 40%;
   border-radius: 5px;
   padding-top: 10px;
+  align-self: center;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background-color: #ddbbff;
   transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11);
+
 }
 
-img {
-  border-radius: 5px 5px 0 0;
+.column {
+  
+  width: 25%;
+  padding: 0 10px;
 }
 
-.container {
-  padding: 2px 16px;
+/* Remove extra left and right margins, due to padding */
+.row {display: flex;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.zaOne {
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: rgba( 255, 187, 238, 0 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+.zaOne:hover {
+  background-color: #ffbbee;
+  box-shadow: 0 8px 16px 0 #ffbbee;
+  transform:translateY(-10px) scale(1.005) translateZ(0);
+}
+
+.zaTwo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: rgba( 255, 187, 238, 0 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+.zaTwo:hover {
+  background-color: #bbffee;
+  box-shadow: 0 8px 16px 0 #bbffee;
+  transform:translateY(-10px) scale(1.005) translateZ(0);
+}
+.zaThree {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: rgba( 255, 187, 238, 0 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+.zaThree::before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  transform: translateY(20px) scale(0.95);
+  filter: blur(20px);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.zaThree:hover{
+  background:  radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  transform:translateY(-10px) scale(1.005) translateZ(0);
+  opacity: 1;
+}
+.zaFour {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: rgba( 255, 187, 238, 0 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+.zaFour:hover {
+  background-color: #ff6961;
+  box-shadow: 0 8px 16px 0 #ff6961;
+  transform:translateY(-10px) scale(1.005) translateZ(0);
 }
     </style>
     <button id="king">
@@ -87,35 +188,38 @@ img {
                 <p>Interior Designer</p> 
               </div>
         </div>
+        <br>
+        <br>
+
         <div class="row">
             <div class="column">
-              <div class="card" id="zaOne">
-                <h3><img src="user.png"/></img></h3>
-                <p>Some text</p>
+              <div class="zaOne">
+                <h3><img src="icon/user.png"/></img></h3>
+                <p>Say HI IDIOTS</p>
                 <p>Some text</p>
               </div>
             </div>
           
             <div class="column">
-              <div class="card" id="zaTwo">
-                <h3>Card 2</h3>
-                <p>Some text</p>
-                <p>Some text</p>
-              </div>
-            </div>
-            
-            <div class="column">
-              <div class="card" id="zaThree">
-                <h3>Card 3</h3>
-                <p>Some text</p>
+              <div class="zaTwo">
+                <h3><img src="icon/gmail.png"/></img></h3>
+                <p>Email me</p>
                 <p>Some text</p>
               </div>
             </div>
             
             <div class="column">
-              <div class="card" id="zaFour">
-                <h3>Card 4</h3>
+              <div class="zaThree">
+                <h3><img src="icon/instagram.png"/></img></h3>
+                <p>Follow me</p>
                 <p>Some text</p>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="zaFour">
+                <h3><img src="icon/roblox.png"/></img></h3>
+                <p>Friend Me</p>
                 <p>Some text</p>
               </div>
             </div>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(img/aesthetic.gif);
+}
+
+/* Float four columns side by side */
+.column {
+  
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {display: flex;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.one {
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: rgba( 255, 187, 238, 0 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+.one:hover {
+  background-color: #ffbbee;
+  box-shadow: 0 8px 16px 0 #ffbbee;
+  transform:translateY(-10px)
+}
+
+.two {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: rgba( 255, 187, 238, 0 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+.two:hover {
+  background-color: #bbffee;
+  box-shadow: 0 8px 16px 0 #bbffee;
+  transform:translateY(-10px)
+}
+.three {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: rgba( 255, 187, 238, 0 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+.three:hover{
+  background-color: #bbeeff;
+  box-shadow: 0 8px 16px 0 #bbeeff;
+  transform:translateY(-10px)
+}
+.four {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: rgba( 255, 187, 238, 0 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+.four:hover {
+  background-color: #bbee;
+  box-shadow: 0 8px 16px 0 #bbee;
+  transform:translateY(-10px)
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="row">
+  <div class="column">
+    <div class="one">
+      <h3><img src="icon/user.png"/></h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="two">
+      <h3><img src="icon/user.png"/></h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="three">
+      <h3><img src="icon/user.png"/></h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="four">
+      <h3><img src="icon/user.png"/></h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
