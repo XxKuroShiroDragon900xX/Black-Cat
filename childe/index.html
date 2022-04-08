@@ -13,8 +13,7 @@
         text-decoration: none;
     }
 body{
-   /* background-image: url(img/purpleocean.gif);*/
-   background-color: black;
+    background-image: url(img/purpleocean.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -109,6 +108,8 @@ button:active{
   background-color: #ffbbee;
   box-shadow: 0 8px 16px 0 #ffbbee;
   transform:translateY(-10px) scale(1.005) translateZ(0);
+  transition: 2s;
+
 }
 
 .zaTwo {
@@ -126,6 +127,8 @@ button:active{
   background-color: #bbffee;
   box-shadow: 0 8px 16px 0 #bbffee;
   transform:translateY(-10px) scale(1.005) translateZ(0);
+  transition: 2s;
+
 }
 .zaThree {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -137,6 +140,7 @@ button:active{
   -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.5 );
+  
 }
 .zaThree::before{
   content: "";
@@ -157,6 +161,7 @@ button:active{
   transform:translateY(-10px) scale(1.005) translateZ(0);
   opacity: 1;
   transition: 2s;
+
 }
 .zaFour {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -173,6 +178,8 @@ button:active{
   background-color: #ff6961;
   box-shadow: 0 8px 16px 0 #ff6961;
   transform:translateY(-10px) scale(1.005) translateZ(0);
+  transition: 2s;
+
 }
     </style>
     <button id="king">
@@ -225,6 +232,11 @@ button:active{
               </div>
             </div>
           </div>
-         
+          <div id="player">
+            <audio loop controls hidden autoplay id="king">
+              <source src="mus/woman.mp3" type="audio/mpeg">
+              Your browser does not support HTML5 video.
+            </audio>
+          </div>
 </body>
 </html>
