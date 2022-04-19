@@ -13,8 +13,8 @@
         text-decoration: none;
     }
 body{
-   background-image: url(img/purpleocean.gif);
-   background-color: black;
+   /*background-image: url(img/purpleocean.gif);*/
+ background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,8 +34,9 @@ button {
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 5px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    position: initial;
+    position: relative;
     align-self: center;
+    justify-content: center;
     font-family: 'Courier New', Courier, monospace;
 }
 button>a:active{
@@ -71,13 +72,14 @@ button:active{
 }
 
 .column {
-  
+  float: left;
   width: 25%;
   padding: 0 10px;
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {display: flex;}
+.row {display: flex;
+margin: 0 -5px;}
 
 /* Clear floats after the columns */
 .row:after {
@@ -87,7 +89,7 @@ button:active{
 }
 
 /* Responsive columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .column {
     width: 100%;
     display: block;
@@ -97,7 +99,7 @@ button:active{
 
 /* Style the counter cards */
 .zaOne {
-  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0%, 0%, 0.2);
   border-radius: 10px;
   padding: 16px;
   text-align: center;
@@ -109,7 +111,11 @@ button:active{
 }
 .zaOne:hover {
   background-color: #ffbbee;
-  box-shadow: 0 8px 16px 0 #ffbbee;
+  box-shadow: 5px 5px rgba(255, 187, 238, 0.5),
+              10px 10px rgba(255, 187, 238, 0.4),
+              15px 15px rgba(255, 187, 238, 0.3),
+              20px 20px rgba(255, 187, 238, 0.2),
+              25px 25px rgba(255, 187, 238, 0.1);
   transform:translateY(-20px) scale(1.005) translateZ(0);
   transition: 1.5s;
 
@@ -128,7 +134,12 @@ button:active{
 }
 .zaTwo:hover {
   background-color: #bbffee;
-  box-shadow: 0 8px 16px 0 #bbffee;
+  box-shadow:  5px 5px rgba(187, 255, 238, 0.5),
+               10px 10px rgba(187, 255, 238, 0.4),
+               15px 15px rgba(187, 255, 238, 0.3),
+               20px 20px rgba(187, 255, 238, 0.2),
+               25px 25px rgba(187, 255, 238, 0.1)
+              ;
   transform:translateY(-20px) scale(1.005) translateZ(0);
   transition: 1.5s;
 
@@ -145,26 +156,21 @@ button:active{
   border: 1px solid rgba( 255, 255, 255, 0.5 );
   
 }
-.zaThree::before{
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  transform: translateY(20px) scale(0.95);
-  filter: blur(10px);
-  opacity: 0.5;
-  transition: opacity 0.3s;
-}
+
 .zaThree:hover{
   background:  radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   transform:translateY(-20px) scale(1.005) translateZ(0);
   opacity: 1;
   transition: 1.5s;
-
+  box-shadow: 5px 5px  rgba(253, 244, 151, 0.5), 
+              10px 10px  rgba(253, 244, 151, 0.4), 
+              15px 15px  rgba(253, 89, 73, 0.3),
+              20px 20px  rgba(214, 36, 159, 0.2 ), 
+              25px 25px rgba( 40, 90, 235, 0.1 );
+ 
+  
+  
+ 
 }
 .zaFour {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -179,7 +185,12 @@ button:active{
 }
 .zaFour:hover {
   background-color: #ff6961;
-  box-shadow: 0 8px 16px 0 #ff6961;
+  box-shadow: 5px 5px rgba( 255, 105, 97, 0.5 ),
+              10px 10px rgba( 255, 105, 97, 0.4 ),
+              15px 15px rgba( 255, 105, 97, 0.3 ),
+              20px 20px rgba( 255, 105, 97, 0.2 ),
+              25px 25px rgba( 255, 105, 97, 0.1 )
+              ;
   transform:translateY(-20px) scale(1.005) translateZ(0);
   transition: 1.5s;
 
@@ -197,20 +208,16 @@ button:active{
         <br>
 
     </br>
-        <div class="card">
-            <div class="container">
-                <h4><b>Jane Doe</b></h4> 
-                <p>Interior Designer</p> 
-              </div>
-        </div>
         <br>
-        <br>
+        <br> 
+        </br>
+        </br>
 
         <div class="row">
             <div class="column">
               <div class="zaOne">
                 <h3><img src="icon/user.png"/></img></h3>
-                <p>Say HI IDIOTS</p>
+                <p>Say HI</p>
                 <p>Some text</p>
               </div>
             </div>
@@ -239,10 +246,10 @@ button:active{
               </div>
             </div>
           </div>
-        </br>
-      </br>
+       
    
         
-      <embed src="mus/0.mp3" loop="true" autostart="true" width="2" height="0">
+      <embed src="mus/nottheking.mp3" loop="true" autostart="true" width="2" height="0">
+        
 </body>
 </html>
