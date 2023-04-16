@@ -45,7 +45,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: url("img/mesh.jpg");
+  background-image: url("childe/img/mesh.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;

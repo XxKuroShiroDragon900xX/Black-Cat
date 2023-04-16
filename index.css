@@ -5,66 +5,66 @@
 
 @font-face{
 font-family: 'Ailerons';
-src: url(font/Ailerons.ttf);
+src: url(childe/font/Ailerons.ttf);
 }
 @font-face{
 font-family: 'Angel';
-src: url(font/AngelRhapsody.ttf);
+src: url(childe/font/AngelRhapsody.ttf);
 }
 @font-face {
 font-family: 'Avayx';
-src: url(font/Avayx.ttf);
+src: url(childe/font/Avayx.ttf);
 }
 @font-face {
 font-family: 'BrownSugar';
-src: url(font/BrownSugar.ttf);
+src: url(childe/font/BrownSugar.ttf);
 }
 @font-face {
 font-family: 'Cerlions';
-src: url(font/Cerlions-Regular.ttf);
+src: url(childe/font/Cerlions-Regular.ttf);
 }
 @font-face{
 font-family: 'Christmas';
-src: url(font/ChristmasReign.ttf);
+src: url(childe/font/ChristmasReign.ttf);
 }
 @font-face{
 font-family: 'ChristmasP';
-src: url(font/ChristmasReignP.ttf);
+src: url(childe/font/ChristmasReignP.ttf);
 }
 @font-face {
 font-family: 'CiberG';
-src: url(font/CiberGotica.ttf);
+src: url(childe/font/CiberGotica.ttf);
 }
 @font-face{
 font-family: 'Ailerons';
-src: url(font/Ailerons.ttf);
+src: url(childe/font/Ailerons.ttf);
 }
 @font-face {
 font-family:'Euljiro' ;
-src: url(font/EULJIRO.ttf);
+src: url(childe/font/EULJIRO.ttf);
 }
 @font-face{
 font-family: 'MagnificChaos';
-src: url(font/MagnificChaos.ttf);
+src: url(childe/font/MagnificChaos.ttf);
 }
 @font-face{
 font-family: 'HugMeTight';
-src: url(font/MfHugMeTight.ttf);
+src: url(childe/font/MfHugMeTight.ttf);
 }
 @font-face {
 font-family: 'Mhiora';
-src: url(font/Mhiora.ttf);
+src: url(childe/font/Mhiora.ttf);
 }
 @font-face {
 font-family: 'Roadstone';
-src: url(font/Roadstone.ttf);
+src: url(childe/font/Roadstone.ttf);
 }
 @font-face {
 font-family: 'Ryujin';
-src: url(font/RyujinAttack.ttf);
+src: url(childe/font/RyujinAttack.ttf);
 }
 body{
-background-image: url(img/Wisteria.jpg);
+background-image: url(childe/img/Wisteria.jpg);
 background-color: black;
 background-repeat: no-repeat;
 background-size: cover;
